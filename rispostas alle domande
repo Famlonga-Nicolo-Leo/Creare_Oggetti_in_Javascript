@@ -1,0 +1,62 @@
+Dichiarare un oggetto?
+Un oggetto in JavaScript si dichiara utilizzando le parentesi graffe {} e può contenere coppie di proprietà e valori. La sintassi di base è la seguente:
+Che differenza c’è tra una variabile e un oggetto?
+
+Variabile: è uno spazio in memoria dove puoi memorizzare un valore. Può contenere un solo valore (ad esempio, un numero, una stringa, un booleano, ecc.). Si dichiara utilizzando let, const o var.
+Oggetto: è una struttura dati complessa che può contenere più coppie di proprietà e valori. Ogni proprietà può avere un valore di qualsiasi tipo, compresi altri oggetti o funzioni.
+
+Compara come si dichiara una variabile a come si dichiara un oggetto.?
+Variabile:
+javascript
+Copia
+let x = 10;
+Oggetto:
+javascript
+Copia
+let persona = {
+  nome: 'Luca',
+  eta: 25
+};
+
+Come si rappresentano le proprietà e i corrispettivi valori in un oggetto JavaScript?
+Le proprietà di un oggetto sono rappresentate come coppie chiave: valore. La chiave è una stringa che identifica la proprietà e il valore può essere di qualsiasi tipo.
+javascript
+Copia
+let auto = {
+  marca: 'Fiat',
+  modello: '500',
+  anno: 2020
+};
+
+A cosa serve la “,” all’interno di un oggetto?
+La virgola separa le coppie di proprietà all'interno dell'oggetto. Non deve essere usata dopo l'ultima coppia di proprietà.
+
+Accedere alle proprietà di un oggetto
+Esistono due modi per accedere alle proprietà di un oggetto: tramite notazione a punto e tramite notazione con parentesi quadre.
+
+Notazione a punto: Si usa il nome della proprietà direttamente dopo il nome dell'oggetto.
+
+javascript
+Copia
+console.log(auto.marca); // "Fiat"
+Notazione con parentesi quadre: Si usa una stringa o una variabile come chiave dell'oggetto.
+
+javascript
+Copia
+console.log(auto['modello']); // "500"
+
+Scrivi la definizione di metodo in JavaScript
+Un metodo in JavaScript è una funzione che è associata a un oggetto. I metodi sono definiti come funzioni all'interno dell'oggetto stesso.
+
+Come si dichiara un metodo (o funzione) di un oggetto?
+Un metodo di un oggetto si dichiara come una funzione all'interno di un oggetto, utilizzando la sintassi dei due punti : e la funzione come valore della proprietà.
+
+A cosa serve la parola chiave this?
+La parola chiave this si riferisce all'oggetto corrente in cui viene utilizzata. All'interno di un metodo di un oggetto, this fa riferimento all'oggetto stesso.
+
+Come si accede a un metodo?
+Si accede a un metodo di un oggetto utilizzando la notazione a punto, proprio come si farebbe per accedere a una proprietà.
+
+javascript
+Copia
+persona.saluta();
